@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+	var timestamp = Date.parse('Mon, 11 Febrary 2019 15:29:00 GMT +02:00');
+
+		alert(timestamp); //Affiche le temps en milliseconde...
+
+		// Commençons tout de suite par huit méthodes trés simples qui fonctionnent toutes selon l'heure locale:
+
+		//     getFullYear() : renvoie l'année sur 4 chiffres ;
+
+    // getMonth() : renvoie le mois (0 à 11) ;
+
+    // getDate() : renvoie le jour du mois (1 à 31) ;
+
+    // getDay() : renvoie le jour de la semaine (0 à 6, la semaine commence le dimanche) ;
+
+    // getHours() : renvoie l'heure (0 à 23) ;
+
+    // getMinutes() : renvoie les minutes (0 à 59) ;
+
+    // getSeconds() : renvoie les secondes (0 à 59) ;
+
+    // getMilliseconds() : renvoie les millisecondes (0 à 999).
+
+    	var myDate = new Date ('Mon, 11 March 2019 15:39 GMT+02:00');
+
+    alert(myDate.getMonth()); // Affiche : 4
+    alert(myDate.getDay()); //Afiche :6
+
+
+    var firstTimestamp = new Date().getTime(); // On obtient le timestamp avant l'exécution 
+ // La fonction travaille..
+
+ //slow(); ici la fonction travaille
+
+    var secondTimestamp = new Date().getTime(), // On récupére le timestamp aprés l'exécution 
+
+    	result =  secondTimestamp - firstTimestamp; // On fait la soustraction 
+
+    	alert("le temps d'exécution est de : " + result + "millisecondes.");
+	</script>
+
+</body>
+</html>
